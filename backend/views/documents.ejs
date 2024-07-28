@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documents</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <%- include('layout') %>
+    <h1>Documents</h1>
+    <ul>
+        <% documents.forEach(document => { %>
+            <li><a href="/documents/<%= document._id %>"><%= document.title %></a></li>
+        <% }) %>
+    </ul>
+    <a href="/documents/new">Add New Document</a>
+</body>
+</html>

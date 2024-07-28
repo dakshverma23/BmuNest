@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumni</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <%- include('layout') %>
+    <h1>Alumni</h1>
+    <ul>
+        <% alumni.forEach(alumni => { %>
+            <li><a href="/alumni/<%= alumni._id %>"><%= alumni.name %></a></li>
+        <% }) %>
+    </ul>
+    <a href="/alumni/new">Add New Alumni</a>
+</body>
+</html>

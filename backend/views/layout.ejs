@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>BMU Nest</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/students">Students</a></li>
+                <li><a href="/documents">Documents</a></li>
+                <li><a href="/alumni">Alumni</a></li>
+                <li><a href="/announcements">Announcements</a></li>
+                <li><a href="/timetables">Timetables</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer>
+        <p>&copy; 2024 BMU Nest</p>
+    </footer>
+</body>
+</html>

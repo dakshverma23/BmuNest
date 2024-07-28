@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <%- include('layout') %>
+    <h1>Students</h1>
+    <ul>
+        <% students.forEach(student => { %>
+            <li><a href="/students/<%= student._id %>"><%= student.name %></a></li>
+        <% }) %>
+    </ul>
+    <a href="/students/new">Add New Student</a>
+</body>
+</html>

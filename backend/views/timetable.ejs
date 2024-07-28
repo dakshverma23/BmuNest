@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetables</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <%- include('layout') %>
+    <h1>Timetables</h1>
+    <ul>
+        <% timetables.forEach(timetable => { %>
+            <li><a href="/timetables/<%= timetable._id %>"><%= timetable.name %></a></li>
+        <% }) %>
+    </ul>
+    <a href="/timetables/new">Add New Timetable</a>
+</body>
+</html>
